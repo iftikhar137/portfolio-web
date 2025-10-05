@@ -1,0 +1,241 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.protfilo-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.navlist{
+display: flex;
+gap: 3.5rem;
+width: 100%;
+position: fixed;
+
+height: 13vh;
+justify-content: center;
+align-items: center;
+font-size: 1rem;
+
+}
+.navlist li{
+    list-style: none;
+    
+}
+.navlist li >a{
+text-decoration: none;
+color: white;
+transition-delay: 0.1s;
+   
+
+}
+.navlist li>a:hover{
+     color: red;
+    text-decoration: underline;
+    transform: scaleX(1);
+    transition-duration: 1s;
+    animation-name: myanim;
+    animation-duration: 4s;
+    position: relative;
+
+}
+.left,.right{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+.left{
+    width: 70%;
+background: #262525;
+padding-left: 25px;
+}
+.right{
+width: 30%;
+background: linear-gradient(-45deg, #5DB9EE,#262525 70%);
+}
+.icons .fa-brands{
+    color: #120808;
+    cursor: pointer;
+    background: linear-gradient(white,#3877ff);
+   
+}
+.icons .fa-brands:hover{
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+button{
+    border-radius: .5rem;
+    color: rgba(10, 11, 10, 0.8);
+    background-color: #e2d9d2;
+    padding: .8rem .1.5rem;
+   margin: 10px;
+    font-size: 1.1rem;
+    border: .1rem solid #3877ff;
+    cursor: pointer;
+    transition: .5s ease;
+    
+}
+button:nth-child(1){
+    background: #5877ff;
+    color: #262525;
+
+
+}
+button:nth-child(2){
+background: transparent;
+color: #5DB9EE;
+
+}
+button:nth-child(1):hover{
+    background: transparent;
+    color: #5DB9EE;
+}
+button:nth-child(2):hover{
+    background:#5DB9EE;
+    color: #262525;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+padding: 10px;
+margin-right: 10px;
+font-size: 2rem;
+gap: 1rem;
+}
+.content{
+    margin-left: 5px;
+}
+.content .intro{
+    font-size: 1.5rem;
+    color: #f6f3f3;
+}
+.content .intro span{
+    color: #ff9238;
+}
+.content h1{
+    font-size: 4rem;
+    color: #3877ff;
+}
+.content .detail{
+    font-size: 1.1rem;
+    color: white;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+   
+}
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+.circle:nth-child(1){
+    width: 38rem;
+    background:linear-gradient( 90deg, transparent 50%, #262525 50%);
+
+}
+.circle:nth-child(2){
+    width: 25rem;
+    background-image: url("ifte.jpg");
+background-size: 100%;
+ background-repeat: no-repeats;
+ box-shadow: 0 0 4rem yellow,inset 0 0 4rem black}
+ 
+ 
+
+ @keyframes myanim{
+    25%{
+      color: #ff9238; left: 30px; top: 0px;
+       
+    }
+ }
+ .circle:nth-child(1).circle:nth-child(2):hover{
+animation-name: anim;
+animation-duration: 4s;
+
+ }
+ @keyframes anim{
+    0%{
+        top: 0px; bottom: 0px;
+    }
+ }
+ 25%{
+    top: 25px; bottom: 25px;
+ }
+.section{
+    width: 100%;
+    height: 500px;
+    background-color: #3877ff;
+}
+ 
+#section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3877ff;
+    width: 100%;
+    height: 600px;
+}
+.heading{
+   background-color: #3877ff;
+   font-size: 3rem;
+   text-align: center;
+padding-top: 15px;
+
+
+}
+.heading>p{
+    font-size: 1rem;
+}
+#section div{
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    color: red;
+    margin: 65px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+#section h1{
+    text-align: center;
+    padding-top: 25px;
+    font-size: 3rem;}
+
+
+
+#section div:hover{
+    background-color: #1157e5;
+    color: #0e0e0f;
+    cursor: pointer;
+     border: 5px solid red;
+     transform: rotate(360deg);
+     transition: 2s;
+   
+}
+.skill_main{
+    width: 100%;
+    height: 500px;
+    background-color: #3877ff;
+}
+.skill_heading{
+    font-size: 2rem;
+    margin-left: 50px;
+    text-decoration: underline;
+    
+}
+.skill_bar{
+    margin-left: 50px;
+    padding: 10px;
+}
+.skill_main .skill_bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
