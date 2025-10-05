@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    background:black;
 }
 .protfilo-container{
     min-height: 100vh;
@@ -238,4 +239,5 @@ padding-top: 15px;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
+
 }
